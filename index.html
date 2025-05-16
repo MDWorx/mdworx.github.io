@@ -1,3 +1,175 @@
-<html>
-<h1> MERHABA! </h1>
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Marmara Digital WorX</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Segoe UI', sans-serif;
+      background-color: #f4f4f4;
+      color: #333;
+      line-height: 1.6;
+    }
+    header {
+      background-color: #000;
+      color: #fff;
+      text-align: center;
+      padding: 2rem 1rem;
+      position: relative;
+    }
+    .logo {
+      width: 100px;
+      height: auto;
+      margin: 0 auto;
+      animation: slideIn 1s ease-out forwards;
+    }
+    @keyframes slideIn {
+      from { transform: translateX(-200%); opacity: 0; }
+      to { transform: translateX(0); opacity: 1; }
+    }
+    h1 {
+      font-family: 'Agency FB', sans-serif;
+      font-size: 3rem;
+      margin: 1rem 0 0.5rem;
+    }
+    .motto {
+      background: url('sailboat.jpg') no-repeat center center/cover;
+      color: white;
+      text-align: center;
+      padding: 4rem 2rem;
+      font-style: italic;
+      font-size: 1.5rem;
+    }
+    section {
+      padding: 3rem 2rem;
+      max-width: 1000px;
+      margin: auto;
+    }
+    .product h2, .pricing h2, .about h2, .whyus h2, .patriotic h2, .stats h2, .contact h2 {
+      text-align: center;
+      margin-bottom: 1.5rem;
+    }
+    .diagram {
+      text-align: center;
+      margin: 2rem 0;
+    }
+    .pricing .highlight {
+      color: red;
+      font-weight: bold;
+    }
+    .logos {
+      display: flex;
+      justify-content: center;
+      flex-wrap: wrap;
+      gap: 1rem;
+      margin-top: 1rem;
+    }
+    .logos img {
+      max-width: 100px;
+      height: auto;
+    }
+    .patriotic {
+      background: url('turkish-flag.jpg') no-repeat center center/cover;
+      color: white;
+      text-align: center;
+      padding: 4rem 2rem;
+      font-size: 1.8rem;
+      font-weight: bold;
+    }
+    .stats ul {
+      list-style: none;
+      padding: 0;
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-around;
+    }
+    .stats li {
+      background: #eee;
+      padding: 1rem;
+      margin: 0.5rem;
+      border-radius: 8px;
+      flex: 1 1 200px;
+      text-align: center;
+    }
+    .contact {
+      background: #222;
+      color: white;
+      padding: 2rem;
+      text-align: center;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <img src="logo.png" alt="MDW Logo" class="logo" />
+    <h1>Marmara Digital WorX</h1>
+  </header>
+
+  <div class="motto">
+    "Değişimin rüzgarını hep sen sür"
+  </div>
+
+  <section class="product">
+    <h2>KiraX - Araba Kiralama Artık Senin Kontrolünde</h2>
+    <p>KiraX, Türkiye'deki rent-a-car firmaları için geliştirilmiş, eşsiz müşteri deneyimi ve rakipsiz yönetim araçları sunan bir sistemdir. Entegre mobil uygulamasıyla anlık bildirimler sağlar. Minimalist ve hızlı kod yapısıyla benzersiz bir kullanıcı deneyimi sunar. SEO, müşteri hizmetleri, ve kaza raporlama gibi alanlarda maksimum verim sağlar.</p>
+  </section>
+
+  <section class="diagram">
+    <h2>Sistem Yapısı</h2>
+    <img src="diagram-placeholder.png" alt="Sistem Diyagramı" />
+  </section>
+
+  <section class="pricing">
+    <h2>Fiyatlandırma</h2>
+    <p><strong>Aylık Paket:</strong> 18.000 TL / ay <span class="highlight">→ 12.000 TL (19 Mayıs'a kadar)</span></p>
+    <p><strong>Yıllık Paket:</strong> 180.000 TL (2 ay ücretsiz) <span class="highlight">→ 120.000 TL</span></p>
+  </section>
+
+  <section class="about">
+    <h2>Hakkımızda</h2>
+    <p>Yeni nesil web geliştiricilerinden oluşan uzman bir ekibiz. En son teknolojileri takip eder, yüksek hızda uygulamaya alırız.</p>
+  </section>
+
+  <section class="whyus">
+    <h2>Neden Bizi Seçmelisiniz?</h2>
+    <p>Yapay zeka destekli geliştirme ve Microsoft, Amazon, Google mühendislerinden danışmanlık.</p>
+    <h3>Uzman Danışmanlar</h3>
+    <div class="logos">
+      <img src="microsoft-logo.png" alt="Microsoft" />
+      <img src="amazon-logo.png" alt="Amazon" />
+      <img src="google-logo.png" alt="Google" />
+    </div>
+    <h3>Çözüm Ortakları</h3>
+    <div class="logos">
+      <img src="openai-logo.png" alt="OpenAI" />
+      <img src="github-logo.png" alt="GitHub" />
+      <img src="w3c-logo.png" alt="W3C" />
+      <img src="lenovo-logo.png" alt="Lenovo" />
+      <img src="intel-logo.png" alt="Intel" />
+      <img src="deepseek-logo.png" alt="Deepseek" />
+    </div>
+  </section>
+
+  <section class="patriotic">
+    Yerli ve Milli Üst Yazılım
+  </section>
+
+  <section class="stats">
+    <h2>Etki Rakamlarımız</h2>
+    <ul>
+      <li>500.000$+ potansiyel müşteri geliri</li>
+      <li>30+ şehirde hedef kitle</li>
+      <li>1000+ araç yönetimi kapasitesi</li>
+    </ul>
+  </section>
+
+  <section class="contact">
+    <h2>İletişim</h2>
+    <p>Email: mdworx@proton.me</p>
+    <p>Telefon: 0531 615 0319</p>
+    <p>Adres: Kazım Karabekir, Şht. Ömer Faydalı Cd. No:233, 77200 Yalova Merkez / Yalova</p>
+  </section>
+</body>
 </html>
